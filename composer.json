@@ -1,0 +1,20 @@
+{
+    "name": "mattondo/bald-child",
+    "description": "The Bald Child theme is purpose-built for Headless WordPress. It is intended to be used along with the Bald Parent theme to add custom styles & functionality to the WordPress CMS.",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Matt Ondo",
+            "email": "yours.truly@mattondo.com"
+        }
+    ],
+    "require": {
+        "htmlburger/carbon-fields": "^3.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

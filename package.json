@@ -1,0 +1,26 @@
+{
+  "name": "bald-child",
+  "version": "1.0.0",
+  "description": "The Bald Child theme is purpose-built for Headless WordPress. It is intended to be used along with the Bald Parent theme to add custom styles & functionality to the WordPress CMS.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattOndo/Bald-Child.git"
+  },
+  "keywords": [
+    "headless",
+    "rest",
+    "api",
+    "wordpress",
+    "theme",
+    "bald"
+  ],
+  "author": "Matt Ondo",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/MattOndo/Bald-Child/issues"
+  },
+  "homepage": "https://github.com/MattOndo/Bald-Child#readme",
+}
