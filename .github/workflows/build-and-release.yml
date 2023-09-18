@@ -7,7 +7,7 @@ name: Build and Release
 
 env:
   ZIP_FILE_NAME: bald-child.zip
-  PLUGIN_SLUG: bald-child
+  PLUGIN_SLUG: Bald-Child
 
 on:
   release:
