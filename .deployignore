@@ -1,0 +1,8 @@
+bald-child/.*
+bald-child/*/.gitkeep
+bald-child/composer.*
+bald-child/node_modules/*
+bald-child/package.json
+bald-child/package-lock.json
+bald-child/composer.json
+bald-child/composer.lock
