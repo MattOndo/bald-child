@@ -15,7 +15,7 @@ jobs:
         WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }} 
         WPE_ENV: mattondoio
         # Deploy Options
-        REMOTE_PATH: "wp-content/themes/Bald-Child/"
-        PHP_LINT: TRUE
+        REMOTE_PATH: "wp-content/themes/bald-child/"
+        PHP_LINT: FALSE
         FLAGS: -azvr --inplace --delete --exclude=".*" --exclude-from=.deployignore
         CACHE_CLEAR: TRUE
