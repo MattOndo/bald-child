@@ -27,20 +27,8 @@ function bald_child_admin_style() {
 add_action( 'admin_enqueue_scripts', 'bald_child_admin_style' );
 
 /**
- * We use WordPress's init hook to make sure
- * our blocks are registered early in the loading
- * process.
- *
- * @link https://developer.wordpress.org/reference/hooks/init/
+ * Custom fields
+ * 
  */
-function tt3child_register_acf_blocks() {
-	/**
-	 * We register our block's with WordPress's handy
-	 * register_block_type();
-	 *
-	 * @link https://developer.wordpress.org/reference/functions/register_block_type/
-	 */
-	register_block_type( __DIR__ . '/blocks/testimonial' );
-}
-// Here we call our register_acf_block() function on init.
-add_action( 'init', 'tt3child_register_acf_blocks' );
+require_once( get_stylesheet_directory() . '/includes/register-acf-blocks-cli.php' );
+require_once( get_stylesheet_directory() . '/includes/register-acf-field-groups.php' );

@@ -1,0 +1,16 @@
+{
+    "name": "acf/code",
+    "title": "Code",
+    "description": "Display a code snippet",
+    "category": "formatting",
+    "apiVersion": 2,
+    "keywords": ["code"],
+    "style": [ "file:./block.css" ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": "block.php"
+    },
+    "supports": {
+        "anchor": true
+    }
+}
