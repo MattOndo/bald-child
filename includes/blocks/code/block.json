@@ -8,7 +8,7 @@
     "keywords": ["code"],
     "editorStyle": [
         "file:./block.css",
-        "file:./highlight/styles/github-dark-dimmed.min.css"
+        "file:./highlight/github-dark-dimmed.min.css"
     ],
     "script": [
         "highlightjs",
