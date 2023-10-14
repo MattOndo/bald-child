@@ -1,21 +1,6 @@
 <?php
 
 /**
- * Theme Setup
- * 
- * @since 1.0.0
- */
-function bald_child_setup() {
-	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		*/
-	load_theme_textdomain( 'bald-child', get_stylesheet_directory() . '/languages' );
-
-}
-add_action( 'after_setup_theme', 'bald_child_setup', 10, 0 );
-
-/**
  * Enqueue scripts and styles.
  * 
  * @since 1.0.0

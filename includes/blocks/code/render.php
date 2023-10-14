@@ -25,7 +25,7 @@ $class_name = $args['class_name'];
         }
 
         if ( $data['code']) {
-            echo "<code>" . htmlentities($data['code']) . "</code>";
+            echo "<code>" . html_entity_decode($data['code']) . "</code>";
         }
     ?>
 </div>

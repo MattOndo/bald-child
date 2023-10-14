@@ -1,5 +1,7 @@
-.github/*
-.gitignore
-.deployignore
-LICENSE.md
+.*
+node_modules/*
 README.md
+LICENSE.md
+create-acf-block.config.json
+package.json
+package-lock.json

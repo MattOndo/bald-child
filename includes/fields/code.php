@@ -40,7 +40,7 @@ acf_add_local_field_group(array(
 			'key' => 'acfb_code__code',
 			'label' => 'Code',
 			'name' => 'code',
-			'type' => 'wysiwyg',
+			'type' => 'textarea',
 			'prefix' => '',
 			'instructions' => '',
 			'required' => 0,
@@ -57,9 +57,6 @@ acf_add_local_field_group(array(
 			'maxlength' => '',
 			'readonly' => 0,
 			'disabled' => 0,
-			'new_lines' => '',
-			'toolbar' => 'code',
-			'tabs' => 'text'
 	)
 	),
   'location' => array (
@@ -76,17 +73,3 @@ acf_add_local_field_group(array(
   "graphql_field_name" => "acfBlockCode",
   "map_graphql_types_from_location_rules" => 1,
 ));
-
-add_filter( 'acf/fields/wysiwyg/toolbars' , 'my_toolbars'  );
-function my_toolbars( $toolbars )
-{
-    // Add a new toolbar called "Very Simple"
-    // - this toolbar has only 1 row of buttons
-    $toolbars['Code'] = array();
-    $toolbars['Code'][1] = array('');
-
-    // return $toolbars - IMPORTANT!
-    return $toolbars;
-}
-
-?>
