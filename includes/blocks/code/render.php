@@ -26,21 +26,20 @@ if ($data['language'] === 'html') {
 
 ?>
 
-<!-- Our front-end template -->
 <div id="<?php echo $block_id; ?>" class="<?php echo $class_name; ?>">
-<small className='rounded-md opacity-50 p-0 pointer-events-none text-xs'><span className='hidden'>Language: </span>{label}</small>
-
     <?php
         if ( $data['language']) {
-            echo "<small><span>Language:</span>" . $data['language'] . "</small>";
+            $label =  "<small><span>Language:</span>" . $language . "</small>";
         } else {
-            echo "<p><strong>Select a language</strong></p>";
+            $label = "<p><strong>Select a language</strong></p>";
         }
 
         if ( $data['code']) {
-            echo "<pre><code class='language-" . $languageClassname . "'>" . htmlspecialchars($data['code']) . "</code></pre>";
+            $code = "<code class='language-" . $language . "'>" . htmlspecialchars($data['code']) . "</code>";
         } else {
-            echo "<p><strong>Enter some code</strong></p>";
+            $code = "<p><strong>Enter some code</strong></p>";
         }
+
+        echo "<pre>" . $label . $code . "</pre>";
     ?>
 </div>
